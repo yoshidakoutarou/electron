@@ -2,10 +2,34 @@
 <html>
 <head>
   <meta charset="utf-8">
-<title>HelloWorld</title>
+  <!-- 最新Verでサイトを表示する -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- 解像度を固定 -->
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!-- integrity = 取得したリソースが予期せぬ改ざんを受けずに提供されたかを、
+  ユーザーエージェントが検証するために使用できるメタデータ -->
+  <!-- anonymouse = Cookie やクライアントサイドの SSL 証明書、HTTP 認証などのユーザ認証情報は不要 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+  crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="example.css">
+<title>Excel</title>
+<!-- <link rel="stylesheet" type="text/css" href="example.css" -->
 </head>
 <body>
-  <p>やぁ</p>
-  <!-- <script src="index.js"></script> -->
+  <!-- <p>やぁ</p> -->
+
+  <form action="" method="get">
+     <input type="file" name="upload_file" id="import-excel"/>
+     <h2>Result</h2>
+     <div id="result"></div>
+   </form>
+
+   <!-- <a href="#" class="square_btn">入稿</a> -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.11.1/xlsx.full.min.js"></script>
+    <script src="excelimport.js"></script>
 </body>
 </html>
